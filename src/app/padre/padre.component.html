@@ -24,7 +24,10 @@
  -->
 
 
- <h1 appEstiloHermanos>{{nombre}}</h1>
-
+ <h1 >{{nombre|uppercase}}</h1>
+<h2>Fecha de hoy: {{fecha|date:'dd/MM/yyyy'}}</h2>
+<h2>{{dolar |currency: 'EUR'}}</h2>
+<h2>{{pi |number: '1.1-6'}}</h2>
+<!-- <h2>Fecha de hoy: {{fecha|date:'yyyy/MM/dd'}}</h2> -->
  <button type="button" (click)="saludar()">Saludar</button>
  <button type="button" (click)="preguntar()">Saludar</button>
