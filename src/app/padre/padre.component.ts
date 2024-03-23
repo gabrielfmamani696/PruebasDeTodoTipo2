@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class PadreComponent {
 
+  mensajeRecibido: string = '';
+
+  recibirMensaje($event: string){
+    this.mensajeRecibido = $event;
+  }
+
+  valorcontador: number =0;
+  // mensajePadre = 'mensaje desde el padre nro 2'; //MANDAR DATOS
+  incrementar(){
+    this.valorcontador++;
+  }
+  decrementar(){
+    this.valorcontador--;
+  }
 }

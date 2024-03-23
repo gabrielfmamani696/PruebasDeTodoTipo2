@@ -1,2 +1,19 @@
-<p>padre works!</p>
-<app-hijo/>
+<!-- 
+<h1>Contador:</h1>
+<p>{{valorcontador}}</p>
+<button (click)="incrementar()">Inc</button>
+<button (click)="decrementar()">Dec</button> 
+-->
+
+<!-- <app-hijo [recibeHijo]="mensajePadre"/> -->
+<!-- Estamos mandando el mensaje MANDAR DATOS -->
+
+<h5>el mensaje recibido del hijo es: {{mensajeRecibido}}</h5>
+<app-hijo 
+(decrementarDesdeHijo)="decrementar()"
+(incrementarDesdeHijo)="incrementar()"
+(mensajeDesdeHijo)="recibirMensaje($event)"
+/>
+
+<h1>Contador:</h1>
+<p>{{valorcontador}}</p>
